@@ -1,0 +1,684 @@
+@charset "UTF-8";
+
+/*utilities*/
+.clear {
+	clear:left;
+}
+
+#exception1 {
+	color: red;
+}
+
+#exception2 {
+	color: red;
+}
+
+#exception3 {
+	color: red;
+}
+
+#exception4 {
+	color: red;
+}
+
+/****************************************
+CSS > Entrance Gate
+*****************************************/
+/********
+ここでイメージとして配置していますが、画像として後で作ったほうが楽だしきれいになります。
+というわけで仮配置です。
+********/
+
+/*page body graphics*/
+.entrance_body {
+	background-color:#ffdbed;
+	background-size:cover;
+}
+
+/*blockBOX for border comment and button*/
+.entrance_gate {
+	/*background-color:#cce5ff;*/
+	background-position: center;
+	background-image: url("http://localhost:8080/NGlib/img/entrance_background.png");
+	background-repeat: no-repeat;
+	margin:auto;
+	padding:220px 0px 0px 0px;
+	border: 5px;
+	/*border-style:dashed;
+	border-color:#ffdbed;*/
+	width:640px;
+	height:360px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform : translate(-50%,-50%);
+}
+/*title*/
+.entrance_h1 {
+	margin:auto;
+	padding:5px;
+	border:0px;
+	width:auto;
+	height:auto;
+	text-align:center;
+	display:block;
+}
+
+/*comments*/
+.entrance_p {
+	margin:auto;
+	padding:5px;
+	border:0px;
+	width:auto;
+	height:auto;
+	text-align:center;
+	display:block;
+}
+
+/*centering buttons*/
+.gatebutton_countainer {
+	margin:0px auto;
+	padding:0px;
+	border:0px;
+	width:400px;
+	height:auto;
+	text-align:center;
+}
+
+
+/*graphics button*/
+.gatebutton_range1 {
+	background-image: url("http://localhost:8080/NGlib/img/entrance_memo01.png");
+	margin:0px 20px;
+	padding:30px 0px;
+	border:0px;
+	width:160px;
+	height:auto;
+	float:left;
+	text-align:center;
+	display:block;
+}
+
+/*graphics button*/
+.gatebutton_range2 {
+	background-image: url("http://localhost:8080/NGlib/img/entrance_memo02.png");
+	margin:0px 20px;
+	padding:30px 0px;
+	border:0px;
+	width:160px;
+	height:auto;
+	float:left;
+	text-align:center;
+	display:block;
+}
+
+/*button link*/
+.gatebutton_link{
+	margin:0px;
+	padding:30px;
+	border:0px;
+	width:auto;
+	height:auto;
+	text-align:center;
+	display:block;
+}
+
+a.gatebutton_link:link{
+	color:black;
+	text-decoration: none;
+}
+
+a.gatebutton_link:visited {
+	color:black;
+	text-decoration: none;
+}
+
+a.gatebutton_link:hover{
+	color:black;
+	text-decoration: none;
+}
+
+a.gatebutton_link:active {
+	color:black;
+	text-decoration: none;
+}
+
+.gatebutton_range1:hover {
+	transform: translateY(-10px);
+	transition-duration: 0.5s;
+}
+
+.gatebutton_range2:hover {
+	transform: translateY(-10px);
+	transition-duration: 0.5s;
+}
+/****************************************
+Common Parts > header
+*****************************************/
+header {
+	background-color:red;
+	margin: auto;
+	padding: 0px;
+	width: 100%;
+	height:110px;
+	background-repeat: repeat-x;
+    background-position: center top;
+    position: relative;
+	display: block;
+}
+.header {
+	background-color:pink;
+	margin:auto;
+	width:720px;
+	padding:10px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+}
+
+.header_img {
+	background-color:green;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width:150px;
+	height:90px;
+	float:left;
+	display: block;
+}
+.header_title {
+	background-color:blue;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width: auto;
+	height:90px;
+	font-size:60px;
+	float:right;
+	display: block;
+}
+
+/****************************************
+Common Parts > pathviewer & horizontalbar
+*****************************************/
+.topic_path {
+	clear:right;
+	background-color: yellow;
+	margin:10px 0px 0px 0px;
+	padding: 0px;
+	width:100%;
+	min-width: 740px;
+	height:20px;
+	font-size:12px;
+	display: block;
+}
+
+.horizontal_bar {
+    background-color: #444;
+    margin: 0px;
+    padding: 0px;
+    border: 0 none;
+    height: 1px;
+    width: 100%;
+    min-width: 740px;
+}
+
+/****************************************
+Common Parts > body
+use important class countainer & contents
+for use information page and common sidebar
+*****************************************/
+
+/*
+body部分を作っていくよー
+とりあえずおっきい四角で囲むよー
+*/
+.countainer {
+	background-color: red;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+	border: 0px;
+	width: auto;
+	min-width: 740px;
+	height: auto;
+}
+
+/*
+サイドバーとコンテンツ部分を分けるために
+Tableタグで左右に分けるよー
+※上位のcountainerと実質範囲は同じです。
+*/
+.workbreak_countainer {
+	background-color: pink;
+	margin: 20px 0px 20px 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	min-width: 740px;
+	height: auto;
+}
+
+/*
+左側のサイドバーを作るよー
+widthはとりあえず200pxで取った。
+*/
+.ltable {
+	background-color: green;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+	border: 2px;
+	border-style: solid;
+	width: 200px;
+	height: auto;
+	vertical-align:top;
+}
+
+/*
+divによるサイドバー全体のデフォルト設定。
+必要に応じて要素ごとにオーバーライドせよ。
+*/
+.side_bar {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: auto;
+	height: auto;
+	font-size:14px;
+}
+
+/*サイドバーの見出しh1*/
+.side_topic1{
+	background-color:blue;
+	margin: 0px;
+	padding: 0px;
+	border: 4px;
+	border-style:outset;
+	width: 192px;
+	height: auto;
+	text-align: center;
+	font-size:25px;
+
+}
+
+/*サイドバーの見出しh2*/
+.side_topic2{
+	background-color:blue;
+	margin: 0px;
+	padding: 0px;
+	width: 200px;
+	height: auto;
+	text-align: center;
+	font-size:16px;
+
+}
+
+/*サイドバーのul*/
+/*
+.side_ul {
+
+}
+*/
+
+
+/*
+右側のコンテンツ部分を作っていくよー
+widthは余った分全部だー
+block要素を指定して、中央配置や下部への移動を
+打ち消してるよ。外すと表示バグるので注意。
+*/
+.rtable {
+	background-color: green;
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	border: 0px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+/*ページタイトルとテーブルをすべて囲ってるdivです。*/
+.contents {
+	background-color: green;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	display: block;
+}
+
+/*テーブルの上に表示してるページタイトルです。*/
+.contents_title {
+	background-color:yellow;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	border: 0px;
+	width: 100%;
+	min-width: 740px;
+	height: auto;
+
+}
+
+
+
+/*テーブルを格納するdivです。*/
+.information_list{
+	background-color: green;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	display: block;
+	font-size:12px;
+}
+
+/*teble本体です。*/
+.contents_info {
+	background-color: green;
+	margin: 0px;
+	padding: 0px;
+	border: 2px;
+	border-style: solid;
+	table-layout: auto;
+	width: 100%;
+	min-width: 720px;
+	height: auto;
+}
+
+/*日付フォームとページフォーム*/
+.formHeader{
+	background-color: blue;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+}
+
+.searchBox{
+	background-color: red;
+	margin:0px;
+	padding: 5px;
+	float: left;
+}
+
+.searchPage {
+	background-color: blue;
+	margin: 5px 0px 0px 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+
+/*
+各カラムの書式設定をしていきます。
+column1:img挿入に使ってるカラム。
+column2:見出しに使ってるカラム。
+column3:内容に使ってるカラム。
+column4:シリーズやエンジンで使うカラム
+column_title:大見出しに使ってるカラム。
+column_commnet:コメントのカラム。
+column_txt:あらすじを入れるおっきなカラム。
+name:内容の単語の途中で改行されないようにfloatにする＆間隔をあけるためのレイアウト処理
+*/
+.column1 {
+	margin: 0px;
+	padding: 2px;
+	border: 0px;
+	border-style: solid;
+	width: 350px;
+	height: 350px;
+}
+
+.column2 {
+	margin: 0px;
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	width: 100px;
+	height: auto;
+}
+
+.column3 {
+	margin: 0px;
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+.column4 {
+	margin: 0px;
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+}
+
+.column_title {
+	margin: 0px;
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+	font-size:16px;
+}
+
+.column_comment {
+	margin: 0px;
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+.column_txt {
+	margin: 0px;
+	padding: 0px;
+	border: 1px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+.name {
+	margin: 0px 7px 0px 8px;
+	padding: 0px;
+	border: 0px;
+	width: auto;
+	height: auto;
+	float: left;
+}
+
+/****************************************
+Common Parts > footer
+*****************************************/
+footer {
+	background-color:red;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height:100px;
+	background-repeat: repeat-x;
+    background-position: center top;
+    position: relative;
+	display: block;
+}
+.footer {
+	background-color:yellow;
+	margin:auto;
+	width:720px;
+	padding:10px;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	text-align:center;
+}
+
+
+.footer_img {
+	background-color:green;
+	margin:auto;
+	padding:0px;
+	border:0px;
+	width:100px;
+	height:60px;
+	position:relative;
+	display: block;
+	text-align:center;
+}
+.footer_copyright {
+	background-color:blue;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width: auto;
+	height:auto;
+	font-size:14px;
+	display: block;
+}
+
+/***********************************************
+Top parts for contents zone and flexble boxes
+************************************************/
+
+.box_index {
+	background-color: blue;
+
+}
+
+.box {
+	background-color: purple;
+	margin:10px;
+	padding:10px;
+	border:0px;
+	width:auto;
+	height:auto;
+	float:left;
+	display: block;
+}
+
+.box_title {
+	background-color:yellow;
+	margin:0px;
+	padding:0px 20px 0px 20px;
+	border:0px;
+	font-size:20px;
+	text-align:center;
+}
+
+.count_result {
+	background-color:pink;
+	margin:0px;
+	padding:0px 30px 0px 40px;
+	border:0px;
+	width: auto;
+	height: auto;
+	min-height: 105px;
+	font-size:14px;
+	list-style-type: decimal
+}
+
+
+/************************************************
+search_list style
+*************************************************/
+
+.list_head {
+	background-color:yellow;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	border: 0px;
+	width: 100%;
+	min-width: 740px;
+	height: auto;
+}
+
+.list_table {
+	background-color:green;
+	margin: 0px;
+	padding: 2px;
+	border: 0px;
+	border-style: none;
+	border-spacing: 0px 2px;
+	table-layout: auto;
+	width: 100%;
+	min-width: 720px;
+	height: auto;
+}
+
+.list_column {
+	background-color:purple;
+	margin: 0px;
+	padding: 0px 5px;
+	border: 1px;
+	border-top: 2px;
+	border-bottom: 2px;
+	border-style: solid;
+	width: auto;
+	height: auto;
+	text-align: center;
+
+}
+
+/************************************************
+admin_menu style
+*************************************************/
+
+.menu_box {
+	background-color: purple;
+	margin:10px;
+	padding:0px;
+	border:0px;
+	width:220px;
+	height:40px;
+	float:left;
+	text-align: center;
+}
+
+.menu_a {
+	background-color: red;
+	margin:0px;
+	padding:8px;
+	border:0px;
+	width:204px;
+	height:24px;
+	display: block;
+}
+
+a.menu_a:link{
+	color:black;
+	text-decoration: none;
+}
+
+a.menu_a:visited {
+	color:black;
+	text-decoration: none;
+}
+
+a.menu_a:hover{
+	color:black;
+	text-decoration: none;
+}
+
+a.menu_a:active {
+	color:black;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
