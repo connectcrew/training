@@ -1,0 +1,54 @@
+＠コンストラクタでidをStringにする
+全ページ検証
+@club一式作成
+/dao/list/selectlist
+/constractor/clId, clName
+/logic/selectlogic
+@insert関連からコンストラクタ変更の影響を取り除く
+@インサート作る
+ロジックを作る
+SELECT * FROM product_sw WHERE pi_id = 3 AND sw_id = 3;
+
+AdminInsertのPiStaffにこれ入れる
+if (!(prId.equals("null"))) {
+Creator cr = new Creator(null, prId);
+producer.add(cr);
+}
+jspの方、デフォルトoptionにvalue=null入れる
+
+InsPprLogic setPartPr = new InsPprLogic();
+setPartPr.execute(producer);
+
+
+staff origin
+pprのidの "----"　←これどうするか
+もし"----"だったらArrayListに入れないifで対応してみる
+カテゴリ毎につくる
+insertテスト
+プラットフォームとサークル追加
+例外処理
+結果確認画面
+
+
+・updateを作る
+・スタッフ欄選択してくださいjs
+
+・ログインページ
+<div class="change_history">
+<c:forEach var="" items="">
+<c:out value="" />
+</c:forEach>
+</div>
+
+
+【課題】
+＠名前にルビ付作業する
+・DBにnamespellカラム追加
+・DAOクエリ変更
+・コンストラクタ変更
+・jspにhtmlタグ「ruby」追加
+＠DAO Statement stmt 使ってないので消す
+＠新規登録（A）の画面から新規登録（B）
+1.JQueryのダイアログボックスでフォーム作ってInsertする。
+2.登録ページへのリンクをtarget_brankで作り、遷移先で登録後元のページをリロード
+@コード整理、リファクタリング
