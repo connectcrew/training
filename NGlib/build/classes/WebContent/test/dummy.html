@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="http://localhost:8080/NG_Lib/CSS/common.css">
+<title>NG_Lib</title>
+</head>
+<body>
+<header>
+	<div class="header">
+		<!-- サイトのイメージ画像やロゴが入ります。 -->
+		<img class="header_img" src="http://localhost:8080/NG_Lib/img/amuseyou_logo.png" width="150px" height="90px">
+		<!-- サイトのタイトルがここに入ります。 -->
+		<div class="header_title">Novelgame Library</div>
+	</div>
+</header>
+<!-- どうやって変数にする？ replaceで上書きする？ 変数を入れておいて文字列作る？ -->
+<div class="topic_path">
+<!-- topicpath（TOPページから現在のページまでのパスを表示させます。 -->
+Top > 会社一覧 > か行 > 株式会社コネクトクルー　(こんな感じにトピックパスが入ります。)
+</div>
+<hr class="horizontal_bar">
+
+<!-- ここからbody部分です。 -->
+<div class="countainer">
+	<!-- サイドバーとコンテンツ部分をFloatを使わずに分割するためにTable属性を使います。 -->
+	<table class="workbreak_countainer">
+		<tr class="workbreak_countainer">
+			<!-- left table にてサイドバーを作ります。 -->
+			<td class="ltable">
+				<div class="side_bar">
+					<h1 class="side_topic1">新着タイトル</h1>
+					<ul>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+					</ul>
+					<h1 class="side_topic1">作品を探す</h1>
+					<ul>
+						<!-- 基本一覧表示でいいが、一部項目多くなりそうなものなどクッション挟む。 -->
+						<li>五十音順で探す</li>
+						<li>ブランドから探す</li>
+						<li>発売日から探す</li><!-- とりあえず年で区切って、年クリックで月ごとのページへ -->
+						<li>シリーズから探す</li>
+						<li>ゲームエンジンから探す</li>
+						<li>プロデューサーから探す</li>
+						<li>シナリオライターから探す</li>
+						<li>イラストレーターから探す</li>
+						<li>グラフィックデザイナーから探す</li>
+						<li>サウンドクリエーターから探す</li>
+						<li>声優から探す</li><!-- 項目が多くなりすぎるので、声優の名前を選択してもらって絞る -->
+						
+					</ul>
+					<h1 class="side_topic1">新着</h1>
+					<ul>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+						<li>更新履歴</li>
+					</ul>
+				</div>
+			</td>
+			
+			<!-- right bar にてコンテンツ部分を作ります。 includeするときは、ここから下はページ固有です。-->
+			<td class="rtable">
+				<div class="contents">
+					<h1 class="contents_title">ここにページタイトルが入ります。</h1>
+					<div class="information_list">
+						<table class="contents_info">
+							<tr>
+								<th class="column1" rowspan="15"><img src="http://localhost:8080/NG_Lib/img/dummy.jpg" width="350px" height="auto"></th>
+							</tr>
+							<tr>
+								<th class="column_title" colspan="2">製品情報</th>
+							</tr>
+							<tr>	
+								<th class="column2">タイトル</th>
+								<th class="column3">ここに品名が入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">ブランド</th>
+								<th class="column3">ここにブランド名が入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">発売日</th>
+								<th class="column3">ここに発売日が入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">シリーズ</th>
+								<th class="column3">ここにシリーズ名が入ります</th>
+							</tr>
+							<tr>
+								<th class="column2">ゲームエンジン</th>
+								<th class="column3">ここにゲームエンジンが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">コメント</th>
+								<th class="column3">ここにコメントが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column_title" colspan="2">製作スタッフ</th>
+							</tr>
+							<tr>
+								<th class="column2">プロデューサー</th>
+								<th class="column3">ここにプロデューサーが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">シナリオ</th>
+								<th class="column3">ここにシナリオライターが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">イラスト</th>
+								<th class="column3">ここにイラストレーターが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">グラフィック</th>
+								<th class="column3">ここにグラフィッククリエイターが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">サウンド</th>
+								<th class="column3">ここにサウンドクリエイターが入ります。</th>
+							</tr>
+							<tr>
+								<th class="column2">出演声優</th>
+								<th class="column3">ここに声優が入ります。</th>
+							</tr>
+							<tr>
+								<th class="column_title" colspan="3">あらすじ</th>
+							</tr>
+							<tr>
+								<th class="column_txt" colspan="3">
+								ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。ここにtxtが入ります。
+								</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- filterで分割するなら、ここから下がfooterです。 -->
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- フッターです。 -->
+<footer>
+	<div class="footer">
+		<img class="footer_img" src="http://localhost:8080/NG_Lib/img/amuseyou_logo.png" width="100px" height="60px">
+		<div class="footer_copyright">Copyright &copy; 2020 <strong>Amuse Create / Amuse you</strong> All Rights Reserved.</div>
+	</div>
+</footer>
+
+</body>
+</html>
